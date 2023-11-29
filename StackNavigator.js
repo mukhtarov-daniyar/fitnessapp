@@ -8,6 +8,7 @@ import HomeScreen from "./screens/HomeScreen";
 import WorkoutScreen from "./screens/WorkoutScreen"; 
 import FitScreen from "./screens/FitScreen"; 
 import RestScreen from "./screens/RestScreen";
+import ProfileScreen from "./screens/ProfileScreen";
 
 const StackNavigator = () => {
   const Stack = createNativeStackNavigator(); 
@@ -23,6 +24,8 @@ const StackNavigator = () => {
         <Stack.Screen name="Fit" component={FitScreen} options={{headerShown:false}}/>
        
         <Stack.Screen name="Rest" component={RestScreen} options={{headerShown:false}}/>
+
+        <Stack.Screen name="Profile" component={ProfileScreen} options={{headerShown:false}}/>
       
       </Stack.Navigator>
     </NavigationContainer>
